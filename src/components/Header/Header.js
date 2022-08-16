@@ -31,7 +31,7 @@ const MainHeader = styled.div`
   border-bottom: 1px solid ${COLORS.gray[300]};
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 16px 32px;
 
   & > a {
@@ -41,8 +41,8 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  flex: 1;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  width: 1000px;
 `;
 
 const NavLink = styled.a`
@@ -51,7 +51,7 @@ const NavLink = styled.a`
   text-decoration: none;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
-  margin-right: 24px;
+  margin-right: 48px;
 
   &:first-of-type {
     color: ${COLORS.secondary};
