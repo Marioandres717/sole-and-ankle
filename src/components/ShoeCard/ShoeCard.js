@@ -63,7 +63,6 @@ const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 338px;
 `;
 
 const ImageWrapper = styled.div`
@@ -104,16 +103,18 @@ const SalePrice = styled.span`
 
 const Flag = styled.span`
   position: absolute;
-  right: -5px;
-  top: 5px;
+  right: -4px;
+  top: 12px;
   display: ${(props) => (props.variant === 'default' ? 'none' : 'inline')};
   color: ${COLORS.white};
   background-color: ${(props) =>
     props.variant === 'on-sale' ? COLORS.primary : COLORS.secondary};
   font-size: 0.75rem;
-  font-weight: ${WEIGHTS.medium};
-  padding: 6px 11px;
+  font-weight: ${WEIGHTS.bold};
+  padding: 0px 10px;
   border-radius: 2px;
+  height: 32px;
+  line-height: 32px;
 `;
 
 export default ShoeCard;
